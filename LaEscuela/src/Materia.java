@@ -31,4 +31,9 @@ public class Materia {
     public int hashCode() {
         return Objects.hash(codigo);
     }
+    
+    @Override
+    public String toString() {
+        return nombre;
+    }
 }

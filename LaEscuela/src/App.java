@@ -12,8 +12,17 @@ public class App {
         escuelita.agregarMateria(algo1);
         escuelita.agregarMateria(algo2);
 
+        //Registrar calificación
+
+        //escuelita.registrarCalificacion(9.0, algo3, pepa); lanza error
         escuelita.registrarCalificacion(9.0, algo2, pepa);
         System.out.println(pepa);
-    
+        escuelita.registrarCalificacion(7.0, algo2, pepa);
+        escuelita.registrarCalificacion(9.0, algo1, pepa);
+        System.out.println(pepa);
+        escuelita.registrarCalificacion(1.5, algo1, pepa);
+        System.out.println(pepa);
+
+
     }
 }
