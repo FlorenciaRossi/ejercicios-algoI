@@ -3,7 +3,7 @@ Elementos o nodos encadenados linealmente. Con una estructura LIFO. **Dos abstra
 1. Una pila sin elementos (pila vacía)  
 2. Una pila con algún elemento (puede ser infinita)  
 
-*¿Qué tipo de dato conocemos que puede soportar esta estrucutra?*
+*¿Qué tipo de dato conocemos que puede soportar esta estrucutra?*  
 -> En java tenemos los arreglos (estático) y las List (dinámico)
 
 *Algunas operaciones de las pilas*
@@ -11,7 +11,9 @@ Elementos o nodos encadenados linealmente. Con una estructura LIFO. **Dos abstra
 Añade un elemento a la pila
 - **desapilar**(): T
 Lee y retira el elemento superior de la pila
-- **Tope**(): T
+- **tope**(): T
 Lee el elemento superior de la pila sin retirarlo
 - **esVacia**(): Bool
 Devuelve cierto si la pila está sin elementos o falso en caso de que contenga alguno
+
+[Información sobre Wildcards en Java](https://www.geeksforgeeks.org/wildcards-in-java/)
