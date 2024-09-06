@@ -2,6 +2,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ArregloEnteros {
+    public void metodoInstancia(){
+        
+    }
     public static int encontrarValorMasFrecuente(int[] numeros){
         if (numeros == null || numeros.length == 0){
             throw new IllegalArgumentException("El arreglo debe contener elementos");
