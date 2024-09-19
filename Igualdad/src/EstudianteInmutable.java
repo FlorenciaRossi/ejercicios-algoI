@@ -1,20 +1,21 @@
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Estudiante{
+public class EstudianteInmutable {
     private String[] materias;
     private String nombre;
     
-    public Estudiante(String nombre, String[] materias){
+    public EstudianteInmutable(String nombre, String[] materias){
+        this.nombre = nombre;
         this.materias = Arrays.copyOf(materias, materias.length);
     }
     
     public String[] getMaterias(){
-        return materias;
+        return Arrays.copyOf(materias, materias.length);
     }
 
-    public void cambiarNombre(String nombre){
-        this.nombre = nombre;
+    public EstudianteInmutable cambiarNombre(String nombre){
+        return new EstudianteInmutable(nombre, materias);
     }
 
     private String getNombre() {
@@ -29,7 +30,7 @@ public class Estudiante{
         if( otro == null || this.getClass() != otro.getClass()){
             return false;
         }
-        Estudiante otro2 = (Estudiante)otro;
+        EstudianteInmutable otro2 = (EstudianteInmutable)otro;
 
         return this.getNombre() == otro2.getNombre(); 
 
@@ -39,5 +40,4 @@ public class Estudiante{
     public int hashCode() {
         return Objects.hash(getNombre());
     }
-
 }
