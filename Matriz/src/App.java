@@ -28,5 +28,13 @@ public class App {
         System.out.println("Cambiar orden de las filas, 0 y 1");
         matriz.cambiarOrdenFilas(0, 1);
         matriz.imprimirMatriz();
+
+        System.out.println("Ordenar filas por la cuarta columna");
+        matriz.ordenarFilasPorColumnas(new int[] {3});
+        matriz.imprimirMatriz();    
+
+        System.out.println("Filtrar matriz");
+        Matriz<Integer> matrizFiltrada = matriz.filtrar(2, '>', 5);
+        matrizFiltrada.imprimirMatriz();
     }
 }
